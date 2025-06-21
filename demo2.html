@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Print Numbers 1 to 10</title>
+</head>
+<body>
+  <h1>Numbers 1 to 10:</h1>
+  <div id="numberList"></div>
+
+  <script>
+    const container = document.getElementById("numberList");
+
+    for (let i = 1; i <= 10; i++) {
+      const numberLine = document.createElement("p");
+      numberLine.textContent = i;
+      container.appendChild(numberLine);
+    }
+  </script>
+</body>
+</html>
